@@ -87,3 +87,50 @@ code {
   height: 100%;
   position: absolute;
 }
+
+.card {
+  width: 243px;
+  height: 150px;
+
+  border-radius: 15px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px;
+
+  position: relative;
+
+  background: linear-gradient(to left, #7543d3, #414199);
+}
+
+.card h1 {
+  font-size: 14px;
+}
+
+.card-title-bank {
+  /* position: absolute;
+  top: 10;
+  right: 10; */
+}
+
+.card h3 {
+  font-size: 12px;
+}
+
+.user-info {
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info span {
+  font-size: 10px;
+}
