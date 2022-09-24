@@ -19,3 +19,72 @@ code {
 .ligth {
   color: lightcyan;
 }
+.clicker{
+  font-size: 17px;
+  margin-left: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(77, 77, 201);
+  border: none;
+  color: lavender;
+  transition: 0.3s all;
+    cursor: pointer;
+}
+.text-clicker{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.clicker:hover{
+  background-color: rgb(34, 34, 194);
+  width: 110px;
+  height: 55px;
+}
+.white-theme{
+  width: 100px;
+  height: 50px;
+  right: 20px;
+  top: 20px;
+  background-color: rgb(78, 197, 197);
+  position: fixed;
+  border: none;
+  transition: 0.3s all;
+  color: lavender;
+  cursor: pointer;
+}
+.white-theme:hover{
+  background-color: rgb(68, 182, 190);
+  width: 110px;
+  height: 55px;
+}
+.backgraung-color{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #282c34;
+  color: lavender;
+}
+.black-theme{
+  width: 100px;
+  height: 50px;
+  right: 150px;
+  top: 20px;
+  background-color: rgb(32, 105, 105);
+  position: fixed;
+  border: none;
+  transition: 0.3s all;
+  font-size: 13px;
+  color: lavender;
+  cursor: pointer;
+}
+.black-theme:hover{
+  background-color: rgb(47, 130, 136);
+  width: 110px;
+  height: 55px;
+
+}
+.backgraung-color_white{
+  background-color: antiquewhite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
