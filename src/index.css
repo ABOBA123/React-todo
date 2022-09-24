@@ -19,7 +19,7 @@ code {
 .ligth {
   color: lightcyan;
 }
-.clicker{
+.clicker {
   font-size: 17px;
   margin-left: 20px;
   width: 100px;
@@ -28,18 +28,18 @@ code {
   border: none;
   color: lavender;
   transition: 0.3s all;
-    cursor: pointer;
+  cursor: pointer;
 }
-.text-clicker{
+.text-clicker {
   margin-left: 20px;
   margin-top: 20px;
 }
-.clicker:hover{
+.clicker:hover {
   background-color: rgb(34, 34, 194);
   width: 110px;
   height: 55px;
 }
-.white-theme{
+.white-theme {
   width: 100px;
   height: 50px;
   right: 20px;
@@ -51,19 +51,19 @@ code {
   color: lavender;
   cursor: pointer;
 }
-.white-theme:hover{
+.white-theme:hover {
   background-color: rgb(68, 182, 190);
   width: 110px;
   height: 55px;
 }
-.backgraung-color{
+.backgraung-color {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: #282c34;
   color: lavender;
 }
-.black-theme{
+.black-theme {
   width: 100px;
   height: 50px;
   right: 150px;
@@ -76,13 +76,12 @@ code {
   color: lavender;
   cursor: pointer;
 }
-.black-theme:hover{
+.black-theme:hover {
   background-color: rgb(47, 130, 136);
   width: 110px;
   height: 55px;
-
 }
-.backgraung-color_white{
+.backgraung-color_white {
   background-color: antiquewhite;
   width: 100%;
   height: 100%;
