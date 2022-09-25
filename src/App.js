@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 function App() {
-            <h3>######</h3>
+  <h3>######</h3>;
   const [inputValue, setInputValue] = useState("");
-  const [CardName, setCardName ] = useState("");
+  const [CardName, setCardName] = useState("");
 
   //   2. Создайте форму кредитной карты
 
@@ -49,17 +49,11 @@ function App() {
           {inputValue.slice(4, 8)} {inputValue.slice(8, 12)}{" "}
           {inputValue.slice(12, 16)}{" "}
         </span>
-        
 
         <div className='user-info'>
           <div>
             <span>Card Holder</span>
-            <p>
-          {" "}
-          {!CardName.length
-            ? "####"
-            : CardName.slice(0, 4)}{" "}
-        </p>
+            <p> {!CardName.length ? "############" : CardName.slice(0, 10)} </p>
           </div>
 
           <div>
