@@ -4,6 +4,8 @@ function App() {
             <h3>######</h3>
   const [inputValue, setInputValue] = useState("");
   const [CardName, setCardName ] = useState("");
+  const [expires,setexpirts] = useState("");
+  const [expiresd,setexpirtsd] = useState("");
 
   //   2. Создайте форму кредитной карты
 
@@ -31,8 +33,18 @@ function App() {
           />
           <p>Expiation Date</p>
           <div className='Expiation-Date'>
-            <input placeholder='Month' />
-            <input placeholder='Year' />
+          <input
+            type='text'
+            placeholder="mounth"
+            value={expires}
+            onChange={(e) => setexpirts(e.target.value)}
+          />
+            <input
+            type='text'
+            placeholder="day"
+            value={expiresd}
+            onChange={(e) => setexpirtsd(e.target.value)}
+          />
             {/* <input placeholder='Cw' /> */}
           </div>
           <button>Submit</button>
@@ -58,13 +70,21 @@ function App() {
           {" "}
           {!CardName.length
             ? "####"
-            : CardName.slice(0, 4)}{" "}
+            : CardName.slice(0, 10)}{" "}
         </p>
           </div>
 
           <div>
             <span>Expires</span>
-            <h3>## / ##</h3>
+            <h3> {" "}
+          {!expires.length
+            ? "##"
+            : expires.slice(0, 2)}{" "}/ 
+            {" "}
+          {!expiresd.length
+            ? "##"
+            : expiresd.slice(0, 2)}{" "}
+            </h3>
           </div>
         </div>
       </div>
