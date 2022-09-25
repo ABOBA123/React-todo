@@ -1,7 +1,9 @@
 import { useState } from "react";
 
 function App() {
+            <h3>######</h3>
   const [inputValue, setInputValue] = useState("");
+  const [CardName, setCardName ] = useState("");
 
   //   2. Создайте форму кредитной карты
 
@@ -22,7 +24,11 @@ function App() {
             onChange={(e) => setInputValue(e.target.value)}
           />
           <p>Card Name</p>
-          <input></input>
+          <input
+            type='text'
+            value={CardName}
+            onChange={(e) => setCardName(e.target.value)}
+          />
           <p>Expiation Date</p>
           <div className='Expiation-Date'>
             <input placeholder='Month' />
@@ -43,11 +49,17 @@ function App() {
           {inputValue.slice(4, 8)} {inputValue.slice(8, 12)}{" "}
           {inputValue.slice(12, 16)}{" "}
         </span>
+        
 
         <div className='user-info'>
           <div>
             <span>Card Holder</span>
-            <h3>######</h3>
+            <p>
+          {" "}
+          {!CardName.length
+            ? "####"
+            : CardName.slice(0, 4)}{" "}
+        </p>
           </div>
 
           <div>
