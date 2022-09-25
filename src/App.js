@@ -1,4 +1,11 @@
+import {usestate,useEffect, useRef} from "react";
+import ReactDOM from "react-dom/client";
 function App() {
+  const [inputValue, setInputValue] = useState("");
+
+  useEffect(() => {
+    previousInputValue.current = inputValue;
+  }, [inputValue]);
   //   2. Создайте форму кредитной карты
 
   //   Что вы узнаете, решив задачу:
@@ -9,11 +16,28 @@ function App() {
 
   return (
     <div>
-      <div>
+        <div className="over_input-panel">
+        <div className="input-panel">
+          <p>Card number</p>
+           <input
+        type="text"
+        value={inputValue}
+      />
+          <p>Card Name</p>
+          <input></input>
+          <p>Expiation Date</p>
+          <div className="Expiation-Date">
+          <input>Month</input>
+          <input>Year</input>
+          <input>Cw</input>
+          </div>
+          <button>Submit</button>
+        </div>
+        </div>
         <div className='card'>
           <h1 className='card-title-bank'>BANK</h1>
 
-          <span>#### #### #### ####</span>
+          <span>####  #### #### ####{inputValue}</span>
 
           <div className='user-info'>
             <div>
@@ -28,7 +52,7 @@ function App() {
           </div>
         </div>
         <div>{/* Твоя вёрстка с данными карты тут */}</div>
-      </div>
+      
     </div>
   );
 }

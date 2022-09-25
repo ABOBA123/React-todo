@@ -134,3 +134,13 @@ code {
 .user-info span {
   font-size: 10px;
 }
+.over_input-panel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-panel{
+  width: 700px;
+  height: 700px;
+  background-color: #414199;
+}
