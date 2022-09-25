@@ -1,11 +1,8 @@
-import {usestate,useEffect, useRef} from "react";
-import ReactDOM from "react-dom/client";
+import { useState } from "react";
+
 function App() {
   const [inputValue, setInputValue] = useState("");
 
-  useEffect(() => {
-    previousInputValue.current = inputValue;
-  }, [inputValue]);
   //   2. Создайте форму кредитной карты
 
   //   Что вы узнаете, решив задачу:
@@ -16,43 +13,50 @@ function App() {
 
   return (
     <div>
-        <div className="over_input-panel">
-        <div className="input-panel">
+      <div className='over_input-panel'>
+        <div className='input-panel'>
           <p>Card number</p>
-           <input
-        type="text"
-        value={inputValue}
-      />
+          <input
+            type='text'
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
           <p>Card Name</p>
           <input></input>
           <p>Expiation Date</p>
-          <div className="Expiation-Date">
-          <input>Month</input>
-          <input>Year</input>
-          <input>Cw</input>
+          <div className='Expiation-Date'>
+            <input placeholder='Month' />
+            <input placeholder='Year' />
+            {/* <input placeholder='Cw' /> */}
           </div>
           <button>Submit</button>
         </div>
-        </div>
-        <div className='card'>
-          <h1 className='card-title-bank'>BANK</h1>
+      </div>
+      <div className='card'>
+        <h1 className='card-title-bank'>BANK</h1>
 
-          <span>####  #### #### ####{inputValue}</span>
+        <span>
+          {" "}
+          {!inputValue.length
+            ? "#### #### #### ####"
+            : inputValue.slice(0, 4)}{" "}
+          {inputValue.slice(4, 8)} {inputValue.slice(8, 12)}{" "}
+          {inputValue.slice(12, 16)}{" "}
+        </span>
 
-          <div className='user-info'>
-            <div>
-              <span>Card Holder</span>
-              <h3>######</h3>
-            </div>
+        <div className='user-info'>
+          <div>
+            <span>Card Holder</span>
+            <h3>######</h3>
+          </div>
 
-            <div>
-              <span>Expires</span>
-              <h3>## / ##</h3>
-            </div>
+          <div>
+            <span>Expires</span>
+            <h3>## / ##</h3>
           </div>
         </div>
-        <div>{/* Твоя вёрстка с данными карты тут */}</div>
-      
+      </div>
+      <div>{/* Твоя вёрстка с данными карты тут */}</div>
     </div>
   );
 }
