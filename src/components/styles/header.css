@@ -1,0 +1,78 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.over_header__rad-block {
+  font-size: 15px;
+  font-weight: 200;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_rad-block {
+  width: 40px;
+  height: 40px;
+  font-size: 9px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  padding: 10px;
+  background-color: #eb5757;
+  color: #e5e5e5;
+}
+
+.header_menu {
+  width: 500px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header_opportunities {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login {
+  width: 150px;
+  height: 50px;
+  background-color: #eb5757;
+  color: #e5e5e5;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: 0.3s all;
+  margin-left: 30px;
+}
+.login:hover {
+  width: 155px;
+  height: 55px;
+}
+
+.header_span_active {
+  color: #eb5757;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_span_active::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+
+  background: #eb5757;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -12px;
+}
