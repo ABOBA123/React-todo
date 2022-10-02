@@ -54,8 +54,8 @@ const Header = ({ activeSpan, setActiveSpan }) => {
             </p>
           </div>
           <div className='header_opportunities'>
-            <img src={search} alt={search} />
-            <img src={busket} style={{ marginLeft: 30 }} alt={busket} />
+            <img className="cursor-p" src={search} alt={search} />
+            <img className="cursor-p"src={busket} style={{ marginLeft: 30 }} alt={busket} />
             <div className='login cursor-p'>
               <p>login</p>
             </div>

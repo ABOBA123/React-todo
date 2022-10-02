@@ -6,6 +6,12 @@ import ellipse from "../../static/Ellipse 3.png";
 import cherry from "../../static/cherry.svg";
 import woman from "../../static/women.png";
 import richard from "../../static/richard.png";
+import phone from "../../static/phone.svg"
+import pizza from "../../static/pizza.png"
+import starsnone from "../../static/starsnone.svg"
+import fire from "../../static/fire.svg"
+import plane from "../../static/plane.svg"
+import play from "../../static/play.svg"
 
 import MainContainer from "../system/containers/main";
 
@@ -29,11 +35,14 @@ const FirstSlide = () => {
           <div className='flex-row'>
             <button className='login cursor-p'>Get Started</button>
             <button className='white-button'>
-              <div></div>Watch Video
+            <a href="https://youtu.be/R26rlxC8_PY"><div className="img-wrapper cursor-p"><img src={play} alt={play}/></div></a>
+             Watch Video
             </button>
           </div>
         </div>
         <div className='Icons'>
+          <img className="fire" src={fire} alt={fire}/>
+          <img className="plane" src={plane} alt={plane}/>
           <img src={ellipse} alt={ellipse} />
           <img className='women' src={woman} alt={woman} />
           <div className='time'>
@@ -45,13 +54,25 @@ const FirstSlide = () => {
             </div>
             <span>Rechard Watson</span>
             <span>Food Courier</span>
-            <div className='phone-lap cursor-p'></div>
+            <div className='phone-lap cursor-p'>
+              <img src={phone} alt={phone}/>
+            </div>
           </div>
           <div className='delivery'>
-            <p>Italian Pizza</p>
+            <img className="pizza" src={pizza} alt={pizza}/>
+            <div className="Italian-Pizza">
+            <p >Italian Pizza</p>
+            <div className="stars-row">
+            <img className="stars cursor-p" src={starsnone} alt={starsnone}/>
+            <img className="stars cursor-p" src={starsnone} alt={starsnone}/>
+            <img className="stars cursor-p" src={starsnone} alt={starsnone}/>
+            <img className="stars cursor-p" src={starsnone} alt={starsnone}/>
+            <img className="stars cursor-p" src={starsnone} alt={starsnone}/>
+            </div>
             <p>
               <span className='color-red'>$</span>7.49
             </p>
+            </div>
           </div>
         </div>
       </MainContainer>

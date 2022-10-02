@@ -12,6 +12,7 @@ function App() {
         setActiveSpan={setActiveSpanHeader}
       />
       <FirstSlide />
+      {/* <SacondSlide /> */}
     </div>
   );
 }
