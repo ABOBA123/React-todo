@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.fire{
+.fire {
   right: 50px;
   top: 50px;
   position: absolute;
@@ -28,14 +28,13 @@
   align-items: center;
   justify-content: center;
 }
-.plane{
+.plane {
   top: 100px;
   right: 30px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .More-then-Faster {
   height: 52px;
@@ -72,6 +71,34 @@
 
   /* background-color:red ; */
 }
+
+.first-slide-slogan {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.first-slide-reviews {
+  width: 50%;
+  height: 60px;
+
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.first-slide-review-img {
+  position: absolute;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -95,7 +122,7 @@
   transition: 0.3s all;
   margin-left: 30px;
 }
-.img-wrapper{
+.img-wrapper {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -165,28 +192,29 @@
   border-radius: 20px;
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   flex-direction: row;
   background: #ffffff;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
 }
-.pizza{
-  width: 100px;
+.pizza {
+  /* width: 130px; */
   height: 100px;
-  padding: 20px;
+  /* padding: 20px; */
 }
-.Italian-Pizza{
-  padding: 20px;
+.Italian-Pizza {
+  /* padding: 20px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.stars-row{
+.stars-row {
   display: flex;
   flex-direction: row;
 }
-.stars{
+.stars {
   width: 10px;
   padding-left: 5px;
 }

@@ -4,10 +4,12 @@ import search from "../../static/search.svg";
 import busket from "../../static/busket.svg";
 import MainContainer from "../system/containers/main";
 
-const Header = ({ activeSpan, setActiveSpan }) => {
+const Header = ({ activeSpan, setActiveSpan, heigths }) => {
   function setActiveState(num) {
     setActiveSpan(num);
   }
+
+  console.log("heigths", heigths);
 
   return (
     <div className='wrapper fl-center header-position'>
@@ -54,8 +56,13 @@ const Header = ({ activeSpan, setActiveSpan }) => {
             </p>
           </div>
           <div className='header_opportunities'>
-            <img className="cursor-p" src={search} alt={search} />
-            <img className="cursor-p"src={busket} style={{ marginLeft: 30 }} alt={busket} />
+            <img className='cursor-p' src={search} alt={search} />
+            <img
+              className='cursor-p'
+              src={busket}
+              style={{ marginLeft: 30 }}
+              alt={busket}
+            />
             <div className='login cursor-p'>
               <p>login</p>
             </div>
