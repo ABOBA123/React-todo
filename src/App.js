@@ -9,6 +9,8 @@ function App() {
 
   const [first, setFirst] = useState({});
   const [second, setSecond] = useState({});
+  const [third, setThird] = useState({});
+  const [four, setFour] = useState({});
 
   // console.log(first?.current?.clientHeight, second?.current?.clientHeight);
 
@@ -17,11 +19,17 @@ function App() {
       <Header
         activeSpan={activeSpanHeader}
         setActiveSpan={setActiveSpanHeader}
-        heigths={[first?.current?.clientHeight, second?.current?.clientHeight]}
-        />
+        heigths={[
+          first?.current?.clientHeight,
+          second?.current?.clientHeight,
+          third?.current?.clientHeight,
+          four?.current?.clientHeight,
+        ]}
+      />
       <FirstSlide stateRef={first} setStateRef={setFirst} />
-      <FirstSlide stateRef={second} setStateRef={setSecond} />
-      <SecondSlide /> 
+      <SecondSlide stateRef={second} setStateRef={setSecond} />
+      <SecondSlide stateRef={third} setStateRef={setThird} />
+      <SecondSlide stateRef={four} setStateRef={setFour} />
     </div>
   );
 }

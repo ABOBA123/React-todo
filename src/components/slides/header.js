@@ -1,15 +1,111 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/header.css";
 import search from "../../static/search.svg";
 import busket from "../../static/busket.svg";
 import MainContainer from "../system/containers/main";
 
 const Header = ({ activeSpan, setActiveSpan, heigths }) => {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+    // clean up code
+    window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    if (heigths.length > 0) {
+      if (offset >= (heigths[0] + heigths[1] + heigths[2]) / 1.1) {
+        setActiveSpan(4);
+      } else if (offset >= (heigths[0] + heigths[1]) / 1.17) {
+        setActiveSpan(3);
+      } else if (offset >= heigths[0] / 1.2) {
+        setActiveSpan(2);
+      } else {
+        setActiveSpan(1);
+      }
+    }
+  }, [offset]);
+
+  useEffect(() => {
+    if (heigths.length > 0) {
+      const search = window.location.search;
+      if (search.length > 0) {
+        let params = new URLSearchParams(search);
+        setActiveSpan(Number(params.get("pos")));
+        switch (Number(params.get("pos"))) {
+          case 1:
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+            break;
+          case 2:
+            window.scrollTo({
+              top: heigths[0],
+              behavior: "smooth",
+            });
+            break;
+          case 3:
+            window.scrollTo({
+              top: heigths[0] + heigths[1],
+              behavior: "smooth",
+            });
+            break;
+          case 4:
+            window.scrollTo({
+              top: heigths[0] + heigths[1] + heigths[2],
+              behavior: "smooth",
+            });
+            break;
+
+          default:
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+        }
+      }
+    }
+  }, [heigths]);
+
   function setActiveState(num) {
     setActiveSpan(num);
-  }
+    switch (num) {
+      case 1:
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+        break;
+      case 2:
+        window.scrollTo({
+          top: heigths[0],
+          behavior: "smooth",
+        });
+        break;
+      case 3:
+        window.scrollTo({
+          top: heigths[0] + heigths[1],
+          behavior: "smooth",
+        });
+        break;
+      case 4:
+        window.scrollTo({
+          top: heigths[0] + heigths[1] + heigths[2],
+          behavior: "smooth",
+        });
+        break;
 
-  console.log("heigths", heigths);
+      default:
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+    }
+  }
 
   return (
     <div className='wrapper fl-center header-position'>
