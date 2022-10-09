@@ -99,10 +99,6 @@
   position: absolute;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
 .women {
   width: 600px;
   margin-bottom: 64px;

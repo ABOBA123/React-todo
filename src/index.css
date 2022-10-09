@@ -42,3 +42,25 @@ a {
   cursor: pointer;
   transition: 0.3s all;
 }
+.slide {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-clm{
+  display: flex;
+  flex-direction: column;
+}
+.text-center{
+  text-align: center;
+}
+.heigh-70{
+  height: 70vh;
+}

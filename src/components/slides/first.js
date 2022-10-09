@@ -26,13 +26,28 @@ import sixUser from "../../static/users/Group 56.png";
 import MainContainer from "../system/containers/main";
 
 const FirstSlide = ({ stateRef, setStateRef }) => {
+  // const [pizza, setpizza] = useState([])
   const [reviews, setReviews] = useState([]);
   const [reviewsChanged, setReviewsChanged] = useState(dayjs().format());
-
+  
   const [star, setStar] = useState(0);
-
+  
   const ref = useRef();
+  const [mens, setmens] = useState([]);
+  const [mensChanged, setmensChanged] = useState(dayjs().format());
+  useEffect(()=>{
+    mens && mens.length && mens[0] === fire
+    ? setmens([fire])
+    : setmens([richard])
 
+  setTimeout(() => setmensChanged(dayjs().format()), 20000);
+}, []);
+// const [pizza, setpizza] = useState([])
+// useEffect(()=>{
+//   pizza && pizza.length && pizza[0] === peperoni
+//   ? setpizza([pizza])
+//   : setpizza([peperoni])
+// })
   useEffect(() => {
     reviews && reviews.length && reviews[0] === firstUser
       ? setReviews([fourUser, fiveUser, sixUser])
@@ -99,7 +114,16 @@ const FirstSlide = ({ stateRef, setStateRef }) => {
           </div>
           <div className='Rechard-Watson'>
             <div className='Rechard-Watson-img'>
-              <img src={richard} alt={richard} />
+            {mens &&
+              mens.length &&
+              mens.map((pic, index) => (
+                <img
+                  style={{ zIndex: index, }}
+                  src={pic}
+                  alt={pic}
+                />
+              ))}
+              {/* <img src={richard} alt={richard} /> */}
             </div>
             <span>Rechard Watson</span>
             <span>Food Courier</span>
@@ -130,7 +154,7 @@ const FirstSlide = ({ stateRef, setStateRef }) => {
                   alt={starsnone}
                   onMouseEnter={() => setNewStarFromHover(3)}
                 />
-                <img
+                <imgs
                   className='stars cursor-p'
                   src={star >= 4 ? statsactive : starsnone}
                   alt={starsnone}
