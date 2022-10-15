@@ -64,3 +64,52 @@ a {
 .heigh-70 {
   height: 70vh;
 }
+.container {
+  width: 1300px;
+  height: 100%;
+  position: relative;
+}
+.text_bottom-secondslide{
+  width: 200px;
+  text-align: center;
+}
+.just-c{
+  display: flex;
+  justify-content: center;
+}
+.height-70{
+  height: 70vh;
+}
+
+.white-button {
+  width: 150px;
+  height: 50px;
+  background: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  transition: 0.3s all;
+  margin-left: 30px;
+}
+.alin-cent{
+  display: flex;
+  align-items: center;
+}
+.just-spacebet{
+  display: flex;
+  justify-content: space-between;
+}
+.color-white{
+  color: aliceblue;
+}
+.font-16{
+  font-size: 16px;
+}
+.font-w500{
+  font-weight: 500;
+}
+.pos-abs{
+  position: absolute;
+}

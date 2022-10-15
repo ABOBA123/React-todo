@@ -1,0 +1,16 @@
+.big-pizza{
+    width: 436px;
+   height: 508px;
+   border-radius: 30px;
+}
+.proposal{
+    width: 260px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pizza-slider{
+    display: flex;
+    justify-content: space-between;
+}

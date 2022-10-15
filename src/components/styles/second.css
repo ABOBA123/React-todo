@@ -1,0 +1,23 @@
+/* .content-secondslide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+.pictures{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /* background-color: aqua; */
+}
+.width-200{
+    width: 200px;
+}
+.secondslide-h1{
+    width: 500px;
+   margin: auto;
+}
+.width-150{
+    width: 150px;
+}
