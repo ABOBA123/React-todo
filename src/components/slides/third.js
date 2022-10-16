@@ -11,6 +11,21 @@ import cake from "../../static/6-07 1.png";
 import peppironi from "../../static/image 2.png";
 import icecream from "../../static/28-15.png";
 
+import ice1 from "../../static/ice1.jpg";
+import ice2 from "../../static/ice2.jpg";
+import ice3 from "../../static/ice3.jpg";
+
+import burger1 from "../../static/burger1.jpg";
+import burger2 from "../../static/burger2.jpg";
+
+import ramen1 from "../../static/ramen1.jpg";
+import ramen2 from "../../static/ramen2.jpg";
+import ramen3 from "../../static/ramen3.jpg";
+
+import cake1 from "../../static/cake1.jpg";
+import cake2 from "../../static/cake2.jpg";
+import cake3 from "../../static/cake3.jpg";
+
 const ThirdSlide = ({ stateRef, setStateRef }) => {
   const ref = useRef();
   useEffect(() => {
@@ -24,8 +39,27 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
     { id: 4, name: "Ramen", img: ramen },
     { id: 5, name: "Icecream", img: icecream },
   ]);
+  const [activeFood, setActiveFood] = useState({
+    id: 2,
+    name: "Pizza",
+    img: peppironi,
+  });
 
-  const [activeFood, setActiveFood] = useState({});
+  const [foodBlocks, setFoodBlocks] = useState([
+    { id: 1, name: "Sausage Pizza", price: "6.79$", img: burger1, catId: 1 },
+    { id: 2, name: "Sausage Pizza", price: "6.79$", img: burger2, catId: 1 },
+    { id: 3, name: "Sausage Pizza", price: "6.79$", img: ice1, catId: 5 },
+    { id: 4, name: "Sausage Pizza", price: "6.79$", img: ice2, catId: 5 },
+    { id: 5, name: "Sausage Pizza", price: "6.79$", img: ice3, catId: 5 },
+    { id: 6, name: "Sausage Pizza", price: "6.79$", img: ramen1, catId: 4 },
+    { id: 7, name: "Sausage Pizza", price: "6.79$", img: ramen2, catId: 4 },
+    { id: 8, name: "Sausage Pizza", price: "6.79$", img: ramen3, catId: 4 },
+    { id: 9, name: "Sausage Pizza", price: "6.79$", img: cake1, catId: 3 },
+    { id: 10, name: "Sausage Pizza", price: "6.79$", img: cake2, catId: 3 },
+    { id: 11, name: "Sausage Pizza", price: "6.79$", img: cake3, catId: 3 },
+    { id: 10, name: "Sausage Pizza", price: "6.79$", img: Pizza, catId: 2 },
+    { id: 11, name: "Sausage Pizza", price: "6.79$", img: Pizza2, catId: 2 },
+  ]);
 
   const pizzaRef = useRef();
 
@@ -59,48 +93,30 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
         <div className='flex-row '>
           <div className='proposal'>
             {foods.map((food) => (
-              <button onClick={()=> setActiveFood(food)}
-              className={
-                activeFood.id === food.id ? "login big-red-button" : "proposal-button white-button just-spacebet font-16 font-w500"
-              }
+              <button
+                onClick={() => setActiveFood(food)}
+                className={
+                  activeFood.id === food.id
+                    ? "login big-red-button"
+                    : "proposal-button white-button just-spacebet font-16 font-w500"
+                }
                 id={food.id}
                 // className='proposal-button white-button just-spacebet font-16 font-w500'
                 // onClickclassName='big-red-button '
               >
-                <div className={activeFood.id === food.id ? "white-outline" :""}><img  src={food.img} alt={food.img} /></div>
+                <div
+                  className={activeFood.id === food.id ? "white-outline" : ""}
+                >
+                  <img src={food.img} alt={food.img} />
+                </div>
                 <p>{food.name}</p>
               </button>
             ))}
-            {/* <button
-            className='proposal-button white-button just-spacebet font-16 font-w500'
-            onClickclassName='big-red-button'
-          >
-            <img src={burger} alt={burger} />
-            <p>Burger</p>
-          </button>
-          <button className='proposal-button login just-spacebet font-16 font-w500 big-red-button'>
-            <div className='white-outline'>
-              <img src={peppironi} alt={peppironi} />
-            </div>
-            <p>Pizza</p>
-          </button>
-
-          <button className='proposal-button white-button just-spacebet font-16 font-w500'>
-            <img src={cake} alt={cake} />
-            <p>Cupcake</p>
-          </button>
-          <button className='proposal-button white-button just-spacebet font-16 font-w500'>
-            <img src={ramen} alt={ramen} />
-            <p>Ramen</p>
-          </button>
-          <button className='proposal-button white-button just-spacebet font-16 font-w500'>
-            <img src={icecream} alt={icecream} />
-            <p>Icecream</p>
-          </button> */}
           </div>
 
           <div ref={pizzaRef} className='pizza-slider flex-row '>
-            <div className='big-pizza cursor-p'>
+            {} {/* code here ----- */}
+            {/* <div className='big-pizza cursor-p'>
               <img src={Pizza} alt={Pizza} />
               <div className='big-pizza-info color-white'>
                 <h1>Italian Pizza</h1>
@@ -115,23 +131,7 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
                 <h1>$ 6.59</h1>
                 <p>Order Now {">"}</p>
               </div>
-            </div>
-            <div className='big-pizza'>
-              <img src={Pizza2} alt={Pizza2} />
-              <div className='big-pizza-info color-white'>
-                <h1>Sausage Pizza</h1>
-                <h1>$ 6.59</h1>
-                <p>Order Now</p>
-              </div>
-            </div>
-            <div className='big-pizza'>
-              <img src={Pizza2} alt={Pizza2} />
-              <div className='big-pizza-info color-white'>
-                <h1>Sausage Pizza</h1>
-                <h1>$ 6.59</h1>
-                <p>Order Now</p>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
