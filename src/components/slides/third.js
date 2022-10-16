@@ -20,9 +20,9 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
   const [foods, setFoods] = useState([
     { id: 1, name: "Burger", img: burger },
     { id: 2, name: "Pizza", img: peppironi },
-    { id: 1, name: "Cupcake", img: cake },
-    { id: 1, name: "Ramen", img: ramen },
-    { id: 1, name: "Icecream", img: icecream },
+    { id: 3, name: "Cupcake", img: cake },
+    { id: 4, name: "Ramen", img: ramen },
+    { id: 5, name: "Icecream", img: icecream },
   ]);
 
   const [activeFood, setActiveFood] = useState({});
@@ -59,12 +59,15 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
         <div className='flex-row '>
           <div className='proposal'>
             {foods.map((food) => (
-              <button
+              <button onClick={()=> setActiveFood(food)}
+              className={
+                activeFood.id === food.id ? "login big-red-button" : "proposal-button white-button just-spacebet font-16 font-w500"
+              }
                 id={food.id}
-                className='proposal-button white-button just-spacebet font-16 font-w500'
-                onClickclassName='big-red-button'
+                // className='proposal-button white-button just-spacebet font-16 font-w500'
+                // onClickclassName='big-red-button '
               >
-                <img src={food.img} alt={food.img} />
+                <div className={activeFood.id === food.id ? "white-outline" :""}><img  src={food.img} alt={food.img} /></div>
                 <p>{food.name}</p>
               </button>
             ))}
