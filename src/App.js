@@ -3,6 +3,7 @@ import FirstSlide from "./components/slides/first";
 import Header from "./components/slides/header";
 import SecondSlide from "./components/slides/second";
 import ThirdSlide from "./components/slides/third";
+import FourthSlide from "./components/slides/fourth";
 // import FirstSlide from "./components/slides/second";
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
       <FirstSlide stateRef={first} setStateRef={setFirst} />
       <SecondSlide stateRef={second} setStateRef={setSecond} />
       <ThirdSlide stateRef={third} setStateRef={setThird}/>
-      <SecondSlide stateRef={four} setStateRef={setFour} />
+      <FourthSlide stateRef={four} setStateRef={setFour}/>
     </div>
   );
 }

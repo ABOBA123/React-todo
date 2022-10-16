@@ -47,10 +47,13 @@
 
 .proposal {
   width: 260px;
-  height: 400px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .big-pizza-info {
@@ -60,7 +63,43 @@
 
   z-index: 3;
 }
-
+.white-outline{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.slider-button{
+    width: 64px;
+    height: 64px;
+    top: 0;
+    right: 100px;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    color: #f2f2f2;
+    background-color: #eb5757;
+}
+.big-red-button{
+  width: 200px;
+  height: 65px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+.slider-button-gray{
+    top: 0;
+    right: 200px;
+    background: #E0E0E0;
+    color: black;
+}
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {

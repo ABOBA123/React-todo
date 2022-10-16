@@ -1,0 +1,61 @@
+.kitchen{
+    width: 661px;
+    height: 701px;
+    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+.rhomb{
+    position: absolute;
+    bottom: 0;
+
+}
+.shef{
+    right: 100px;
+    position: absolute;
+}
+.onion{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.onion1{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+.popcorn{
+    position: absolute;
+    top: 50%;
+    left: -70px;
+}
+.salat1{
+    top: 20px;
+    right: 150px;
+    position: absolute;
+}
+.salat2{
+    top: 20px;
+    right: 220px;
+    position: absolute;
+}
+.text{
+    width: 532px;
+    height: 462px; 
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.reviews{
+    width: 263px;
+    height: 161px;
+    bottom: 0;
+    right: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+}

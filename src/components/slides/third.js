@@ -11,6 +11,8 @@ import cake from "../../static/6-07 1.png";
 import peppironi from "../../static/image 2.png";
 import icecream from "../../static/28-15.png";
 
+
+
 const ThirdSlide = ({ stateRef, setStateRef }) => {
   const ref = useRef();
   useEffect(() => {
@@ -33,48 +35,55 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
         <div className='OUR_MENU'>
           <p className='color-red'>OUR MENU</p>
           <h1> Menu That Always Makes You Fall In Love</h1>{" "}
-          <button onClick={() => scrollTo(false)}>{"<"}</button>
-          <button onClick={() => scrollTo(true)}>{">"}</button>
+          <button className="slider-button slider-button-gray cursor-p" onClick={() => scrollTo(false)}>{"<"}</button>
+          <button className="slider-button cursor-p" onClick={() => scrollTo(true)}>{">"}</button>
         </div>
         <div className='flex-row '>
           <div className='proposal'>
-            <button className='white-button just-spacebet font-16 font-w500'>
-              <img src={burger} alt={burger} />
+            <button className='white-button just-spacebet font-16 font-w500' 
+            onClickclassName = 'big-red-button'>
+              <img src={burger} alt={burger}  />
               <p>Burger</p>
             </button>
-            <button className='login just-spacebet font-16 font-w500'>
-              <img src={ramen} alt={ramen} />
-              <p>ramen</p>
+            <button className='login just-spacebet font-16 font-w500 big-red-button'>
+                <div className="white-outline">
+              <img src={peppironi} alt={peppironi}  />
+              </div>
+              <p>Pizza</p>
+            </button>
+           
+            <button className='white-button just-spacebet font-16 font-w500'>
+              <img src={cake} alt={cake}  />
+              <p>Cupcake</p>
             </button>
             <button className='white-button just-spacebet font-16 font-w500'>
-              <img src={cake} alt={cake} />
-              <p>cake</p>
+              <img src={ramen} alt={ramen}  />
+              <p>Ramen</p>
             </button>
             <button className='white-button just-spacebet font-16 font-w500'>
-              <img src={peppironi} alt={peppironi} />
-              <p>peppironi</p>
+              <img src={icecream} alt={icecream}  />
+              <p>Icecream</p>
             </button>
-            <button className='white-button just-spacebet font-16 font-w500'>
-              <img src={icecream} alt={icecream} />
-              <p>icecream</p>
-            </button>
+            
           </div>
+          
+          
 
           <div ref={pizzaRef} className='pizza-slider flex-row '>
-            <div className='big-pizza'>
-              <img src={Pizza} alt={Pizza} />
+            <div className='big-pizza cursor-p'>
+              <img src={Pizza} alt={Pizza}  />
               <div className='big-pizza-info color-white'>
                 <h1>Italian Pizza</h1>
                 <h1>$ 7.49</h1>
-                <p>Order Now</p>
+                <p>Order Now {">"}</p>
               </div>
             </div>
-            <div className='big-pizza'>
+            <div className='big-pizza cursor-p'>
               <img src={Pizza2} alt={Pizza2} />
               <div className='big-pizza-info color-white'>
                 <h1>Sausage Pizza</h1>
                 <h1>$ 6.59</h1>
-                <p>Order Now</p>
+                <p>Order Now {">"}</p>
               </div>
             </div>
             <div className='big-pizza'>

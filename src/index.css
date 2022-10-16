@@ -81,18 +81,7 @@ a {
   height: 70vh;
 }
 
-.white-button {
-  width: 150px;
-  height: 50px;
-  background: white;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: none;
-  transition: 0.3s all;
-  margin-left: 30px;
-}
+
 .alin-cent{
   display: flex;
   align-items: center;
@@ -112,4 +101,51 @@ a {
 }
 .pos-abs{
   position: absolute;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.backgaund-red{
+  background-color: red;
+}
+.backgaund-blue{
+  background-color: blue;
+}
+.thebig-button{
+  width: 1000px;
+}
+.login {
+  width: 180px;
+  height: 50px;
+  background-color: #eb5757;
+  color: #e5e5e5;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+  margin-left: 30px;
+}
+.white-button {
+  width: 150px;
+  height: 50px;
+  background: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+  margin-left: 30px;
+}
+.color-gray{
+  color: #828282;
+}
+.margin-0{
+padding: 0;
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/second.css";
-// import "../index.css";
+import "../../index.css";
 import MainContainer from "../system/containers/main";
 import dayjs from "dayjs";
 
@@ -29,7 +29,8 @@ const [drive , setdrive] = useState()
           <p className="text_bottom-secondslide"> You only need a few steps in ordering food</p>
         </div>
         <div className='flex-clm'>
-        <img className="width-150 cursor-p " onClick={()=> setdrive}
+        <img className="width-150 cursor-p " onClick={()=> setdrive()
+        }
        src={deliveryman} alt={deliveryman} />
           <h1>Fastest Delivery</h1>
           <p className="text_bottom-secondslide"> Delivery that is always ontime even faster</p>

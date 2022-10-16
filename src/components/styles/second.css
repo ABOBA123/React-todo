@@ -21,3 +21,7 @@
 .width-150{
     width: 150px;
 }
+.just-center{
+    display: flex;
+    justify-content: center;
+}
