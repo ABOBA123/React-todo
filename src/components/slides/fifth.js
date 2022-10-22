@@ -74,7 +74,7 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                         The Fastest In Delivery{" "}
                         <span className='color-red'>Food</span>
                       </p>
-                      <button className='login w-100 phone-order-now ' >
+                      <button className='login w-100 phone-order-now '>
                         Order Now
                       </button>
                     </div>
@@ -87,32 +87,34 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                   </div>
                 </div>
                 <h3>Categories</h3>
-                <div className='w-150 flex-row  padd-0 ' >
-                  <button   className='login margin-left-0 normal-button'>
-                    <img  src={burger} alt={burger} />
-                    Burger
-                  </button>
-                  <button  className='white-button just-cont-space-ar normal-button'>
-                    <img src={peppironi} alt={peppironi} />
-                    Pizza
-                  </button>
-                  <button className='white-button normal-button'>
-                    <img src={cake} alt={cake} />
-                    Cupcake
-                  </button>
+                <div className='parent-categories'>
+                  <div className='w-150 flex-row padd-0 pos-abs '>
+                    <button className='login margin-left-0 normal-button'>
+                      <img src={burger} alt={burger} />
+                      Burger
+                    </button>
+                    <button className='white-button just-cont-space-ar normal-button'>
+                      <img src={peppironi} alt={peppironi} />
+                      Pizza
+                    </button>
+                    <button className='white-button normal-button'>
+                      <img src={cake} alt={cake} />
+                      Cupcake
+                    </button>
+                  </div>
                 </div>
                 {/* </div> */}
                 {/* </div> */}
                 {/* <h3>Popular Now</h3> */}
                 <div>
-                    <div className="flex-row bottom-0">
-                    <div className="white-burger">
-                    <img  src={hamburger} alt={hamburger}/>
+                  <div className='flex-row bottom-0'>
+                    <div className='white-burger'>
+                      <img src={hamburger} alt={hamburger} />
                     </div>
-                    <div className="white-burger">
-                    <img src={hamburger2} alt={hamburger2}/>
+                    <div className='white-burger'>
+                      <img src={hamburger2} alt={hamburger2} />
                     </div>
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
