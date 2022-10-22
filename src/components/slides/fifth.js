@@ -10,6 +10,8 @@ import Jeph from "../../static/Jeph .png";
 import burger from "../../static/2450 1.png";
 import peppironi from "../../static/image 2.png";
 import cake from "../../static/6-07 1.png";
+import hamburger from "../../static/Delicious hamburger with on table.png";
+import hamburger2 from "../../static/sc5sTPMrVfk.png";
 const FifthSlide = ({ stateRef, setStateRef }) => {
   const ref = useRef();
   useEffect(() => {
@@ -29,7 +31,7 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
               Discover food wherever and whenever and get your food delivered
               quickly.
             </p>
-            <button className='login font-16'>Get The App</button>
+            <button className='login font-16 margin-left-0'>Get The App</button>
           </div>
           <div>
             {/* <div className='Rechard-Watson'>
@@ -72,7 +74,7 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                         The Fastest In Delivery{" "}
                         <span className='color-red'>Food</span>
                       </p>
-                      <button className='login w-100 phone-order-now'>
+                      <button className='login w-100 phone-order-now ' >
                         Order Now
                       </button>
                     </div>
@@ -85,22 +87,27 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                   </div>
                 </div>
                 <h1>Categories</h1>
-                <div className='w-150 flex-row pos-abs padd-0'>
-                  <button className='login'>
-                    <img className='' src={burger} alt={burger} />
+                <div className='w-150 flex-row pos-abs padd-0 ' >
+                  <button  width={120} height={44}  className='login margin-left-0'>
+                    <img  src={burger} alt={burger} />
                     Burger
                   </button>
-                  <button className='white-button'>
-                    <img className='' src={peppironi} alt={peppironi} />
+                  <button  width={120} height={44}  className='white-button just-cont-space-ar'>
+                    <img src={peppironi} alt={peppironi} />
                     Pizza
                   </button>
-                  <button className='white-button'>
-                    <img className='' src={cake} alt={cake} />
+                  <button  width={120} height={44}  className='white-button'>
+                    <img src={cake} alt={cake} />
                     Cupcake
                   </button>
                 </div>
                 {/* </div> */}
                 {/* </div> */}
+                <h3>Popular Now</h3>
+                <div>
+                    <img src={hamburger} alt={hamburger}/>
+                    <img src={hamburger2} alt={hamburger2}/>
+                </div>
               </div>
             </div>
           </div>

@@ -206,3 +206,10 @@ a {
 .ml-20 {
   margin-left: 20px;
 }
+.just-cont-space-ar{
+  display: flex;
+  justify-content: space-around;
+}
+.margin-left-0{
+  margin-left: 0;
+}
