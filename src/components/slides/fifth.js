@@ -106,6 +106,7 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                 {/* </div> */}
                 {/* </div> */}
                 {/* <h3>Popular Now</h3> */}
+                <h3>Popular Now</h3>
                 <div>
                   <div className='flex-row bottom-0'>
                     <div className='white-burger'>
