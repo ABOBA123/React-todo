@@ -4,6 +4,7 @@ import Header from "./components/slides/header";
 import SecondSlide from "./components/slides/second";
 import ThirdSlide from "./components/slides/third";
 import FourthSlide from "./components/slides/fourth";
+import FifthSlide from "./components/slides/fifth";
 // import FirstSlide from "./components/slides/second";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   const [second, setSecond] = useState({});
   const [third, setThird] = useState({});
   const [four, setFour] = useState({});
-
+  const [fifth, setFifth] = useState({});
   // console.log(first?.current?.clientHeight, second?.current?.clientHeight);
 
   return (
@@ -26,12 +27,14 @@ function App() {
           second?.current?.clientHeight,
           third?.current?.clientHeight,
           four?.current?.clientHeight,
+          fifth?.current?.clientHeight,
         ]}
       />
       <FirstSlide stateRef={first} setStateRef={setFirst} />
       <SecondSlide stateRef={second} setStateRef={setSecond} />
       <ThirdSlide stateRef={third} setStateRef={setThird}/>
       <FourthSlide stateRef={four} setStateRef={setFour}/>
+      <FifthSlide stateRef={fifth} setStateRef={setFifth}/>
     </div>
   );
 }

@@ -113,7 +113,7 @@ const Header = ({ activeSpan, setActiveSpan, heigths }) => {
         <div className='header'>
           <div className='over_header__rad-block'>
             <div class='header_rad-block'>
-              <h1>F U D O</h1>
+              <h1 className="color-white">F U D O</h1>
             </div>
             <h1>Fudo</h1>
           </div>

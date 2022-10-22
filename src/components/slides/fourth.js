@@ -12,10 +12,16 @@ import popcorn from "../../static/popcorn.png";
 import salat1 from "../../static/salat 1.png";
 import salat2 from "../../static/salat 2.png";
 import firstUser from "../../static/users/Ellipse 5.png";
+import secondUser from "../../static/users/Ellipse 6.png";
+import thirdUser from "../../static/users/Ellipse 7.png";
 // useEffect(()=>{
 
 // })
-
+// const [users, setusers] = useState ([
+//     {id: 1, name: "firstUser", img: firstUser},
+//     {id: 2, name: "secondUser", img: secondUser},
+//     {id: 3, name: "thirdUser", img: thirdUser},
+// ]);
 const FourthSlide = ({ stateRef, setStateRef }) => {
     const ref = useRef();
     useEffect(() => {
@@ -35,6 +41,7 @@ const FourthSlide = ({ stateRef, setStateRef }) => {
                 <img className="salat2" src={salat2} ale={salat2}/>
                 <div className="reviews">
                     <h4> Our Reviewers</h4>
+
                 </div>
                 </div>
                 <div className="kitchen">
@@ -46,8 +53,9 @@ const FourthSlide = ({ stateRef, setStateRef }) => {
                           the very  fast delivey. I highly recommend Fudo
                             to you”.</p>
                             <div className="flex-row">
-                            {/* <img src={firstUser} alt={firstUser}/> */}
+                            {/* <img src={users.img} alt={users.img}/> */}
                             <div className="flex-clm margin-0">
+
                             <h4>Theresa Jordan</h4>
                             <p className="color-gray">Food Enthusiast</p>
                             </div>

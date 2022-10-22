@@ -69,7 +69,7 @@ const FirstSlide = ({ stateRef, setStateRef }) => {
       <MainContainer style={"first-slide-wrapper"}>
         <div className='first-slide-slogan'>
           <div className='More-then-Faster '>
-            <a className='cursor-p'>More then Faster</a>
+            <a className='cursor-p color-red '>More then Faster</a>
             <img src={cherry} alt={cherry} />
           </div>
           <h3 className='fat-text'>
