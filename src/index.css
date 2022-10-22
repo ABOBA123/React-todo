@@ -213,3 +213,11 @@ a {
 .margin-left-0{
   margin-left: 0;
 }
+.normal-button{
+  width: 120px;
+  height: 44px;
+ 
+}
+.bottom-0{
+  bottom: 0;
+}

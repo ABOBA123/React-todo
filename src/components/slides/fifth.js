@@ -86,27 +86,33 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                     />
                   </div>
                 </div>
-                <h1>Categories</h1>
-                <div className='w-150 flex-row pos-abs padd-0 ' >
-                  <button  width={120} height={44}  className='login margin-left-0'>
+                <h3>Categories</h3>
+                <div className='w-150 flex-row  padd-0 ' >
+                  <button   className='login margin-left-0 normal-button'>
                     <img  src={burger} alt={burger} />
                     Burger
                   </button>
-                  <button  width={120} height={44}  className='white-button just-cont-space-ar'>
+                  <button  className='white-button just-cont-space-ar normal-button'>
                     <img src={peppironi} alt={peppironi} />
                     Pizza
                   </button>
-                  <button  width={120} height={44}  className='white-button'>
+                  <button className='white-button normal-button'>
                     <img src={cake} alt={cake} />
                     Cupcake
                   </button>
                 </div>
                 {/* </div> */}
                 {/* </div> */}
-                <h3>Popular Now</h3>
+                {/* <h3>Popular Now</h3> */}
                 <div>
-                    <img src={hamburger} alt={hamburger}/>
+                    <div className="flex-row bottom-0">
+                    <div className="white-burger">
+                    <img  src={hamburger} alt={hamburger}/>
+                    </div>
+                    <div className="white-burger">
                     <img src={hamburger2} alt={hamburger2}/>
+                    </div>
+                    </div>
                 </div>
               </div>
             </div>
