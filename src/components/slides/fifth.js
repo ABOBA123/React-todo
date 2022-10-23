@@ -17,6 +17,12 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
   useEffect(() => {
     setStateRef(ref);
   }, []);
+
+  const [button, setButton] = useState([
+    { id: 1, name: "Burger", img: burger },
+    { id: 2, name: "Pizza", img: peppironi },
+    { id: 3, name: "Cupcake", img: cake },
+  ]);
   return (
     <div className='slide' ref={ref}>
       <MainContainer>
@@ -89,6 +95,7 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                 <h3>Categories</h3>
                 <div className='parent-categories'>
                   <div className='w-150 flex-row padd-0 pos-abs '>
+                    
                     <button className='login margin-left-0 normal-button'>
                       <img src={burger} alt={burger} />
                       Burger
@@ -108,12 +115,12 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
                 {/* <h3>Popular Now</h3> */}
                 <h3>Popular Now</h3>
                 <div>
-                  <div className='flex-row bottom-0'>
+                  <div className='flex-row bottom-0 '>
                     <div className='white-burger'>
-                      <img src={hamburger} alt={hamburger} />
+                      <img className="burger-first pos-abs " src={hamburger} alt={hamburger} />
                     </div>
                     <div className='white-burger'>
-                      <img src={hamburger2} alt={hamburger2} />
+                      <img className="burger-first pos-abs" src={hamburger2} alt={hamburger2} />
                     </div>
                   </div>
                 </div>

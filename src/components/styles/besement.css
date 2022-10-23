@@ -1,0 +1,31 @@
+p{
+    font-weight: 400;
+    color: #333333;
+}
+
+.height-45{
+    height: 45vh;
+}
+.besement-Our-job{
+    width: 297px;
+    font-weight: 500;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.our-representatives{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.Email{
+    width: 196px;
+    height: 51px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid gray;
+}
