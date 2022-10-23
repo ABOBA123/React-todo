@@ -76,11 +76,11 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
       pizzaRef.current.scrollLeft = 0;
     }
   };
-  const [popup, setPopup] = useState(false)
+  const [popup, setPopup] = useState(false);
 
   return (
     <div className='slide' ref={ref}>
-      {popup && <div className="popup"></div>}
+      {popup && <div className='popup'></div>}
       <div className='container'>
         <div className='OUR_MENU'>
           <p className='color-red'>OUR MENU</p>
@@ -126,8 +126,11 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
             {foodBlocks.map(
               (food) =>
                 food.catId === activeFood.id && (
-                  <div className='big-pizza cursor-p'>
-                    <img onClick={()=> setPopup(true)} src={food.img} alt={food.img} />
+                  <div
+                    className='big-pizza cursor-p'
+                    onClick={() => setPopup(true)}
+                  >
+                    <img src={food.img} alt={food.img} />
                     <div className='big-pizza-info color-white'>
                       <h1 className='color-white'>{food.name}</h1>
                       <h1 className='color-white'>{food.price}</h1>
