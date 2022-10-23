@@ -77,10 +77,19 @@ const ThirdSlide = ({ stateRef, setStateRef }) => {
     }
   };
   const [popup, setPopup] = useState(false);
-const [popupActiveImg, setPopupActiveImg] = useState(null)
+  const [popupActiveImg, setPopupActiveImg] = useState(null);
   return (
     <div className='slide' ref={ref}>
-      {popup && <div className='popup' onClick={()=> {setPopup(false);}}><img src={popupActiveImg} alt={popupActiveImg}/></div>}
+      {popup && (
+        <div className='popup' onClick={() => setPopup(false)}>
+          <img
+            onClick={(e) => e.stopPropagation()}
+            style={{ width: 460 }}
+            src={popupActiveImg}
+            alt={popupActiveImg}
+          />
+        </div>
+      )}
       <div className='container'>
         <div className='OUR_MENU'>
           <p className='color-red'>OUR MENU</p>
@@ -128,7 +137,11 @@ const [popupActiveImg, setPopupActiveImg] = useState(null)
                 food.catId === activeFood.id && (
                   <div
                     className='big-pizza cursor-p'
-                    onClick={() => {setPopup(true);setPopupActiveImg(food.img)}} >
+                    onClick={() => {
+                      setPopup(true);
+                      setPopupActiveImg(food.img);
+                    }}
+                  >
                     <img src={food.img} alt={food.img} />
                     <div className='big-pizza-info color-white'>
                       <h1 className='color-white'>{food.name}</h1>

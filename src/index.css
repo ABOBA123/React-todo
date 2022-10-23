@@ -206,22 +206,21 @@ a {
 .ml-20 {
   margin-left: 20px;
 }
-.just-cont-space-ar{
+.just-cont-space-ar {
   display: flex;
   justify-content: space-around;
 }
-.margin-left-0{
+.margin-left-0 {
   margin-left: 0;
 }
-.normal-button{
+.normal-button {
   width: 120px;
   height: 44px;
- 
 }
-.bottom-0{
+.bottom-0 {
   bottom: 0;
 }
-.popup{
+.popup {
   top: 0;
   left: 0;
   width: 100%;
@@ -232,4 +231,13 @@ a {
   align-items: center;
   justify-content: center;
   position: fixed;
+}
+
+.popup-inner {
+  width: 1300px;
+  height: 760px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
