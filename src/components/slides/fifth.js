@@ -66,7 +66,13 @@ const FifthSlide = ({ stateRef, setStateRef }) => {
             <div className='phone-view'>
               <div className='phone-header'>
                 {/* <div className="telephone-container"> */}
-                <div className='four-point'></div>
+                <div className='four-point four-point-normal'>
+                  <div className="gray-lap"></div>
+                  <div className="gray-lap"></div>
+                  <div className="gray-lap"></div>
+                  <div className="gray-lap red-lap"></div>
+
+                </div>
                 <p>California, US</p>
                 <div className='four-point'>
                   <img src={Jeph} alt={Jeph} />

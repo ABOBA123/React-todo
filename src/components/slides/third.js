@@ -128,12 +128,16 @@ const [popupActiveImg, setPopupActiveImg] = useState(null)
                 food.catId === activeFood.id && (
                   <div
                     className='big-pizza cursor-p'
-                    onClick={() => {setPopup(true);setPopupActiveImg(food.img)}} >
+                    onClick={() => {setPopup(true);setPopupActiveImg(food.img)}}
+                    // className={
+                    //   setPopupActiveImg === true ?"asd" :"cursor-p"
+                    // } 
+                    >
                     <img src={food.img} alt={food.img} />
                     <div className='big-pizza-info color-white'>
                       <h1 className='color-white'>{food.name}</h1>
                       <h1 className='color-white'>{food.price}</h1>
-                      <p>Order Now {">"}</p>
+                      <p className="color-white">Order Now {">"}</p>
                     </div>
                   </div>
                 )

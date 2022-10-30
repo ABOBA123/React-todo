@@ -105,6 +105,7 @@ const FirstSlide = ({ stateRef, setStateRef }) => {
           </div>
         </div>
         <div className='Icons'>
+        {/* <div className="red-cube">dasdasd</div> */}
           <img className='fire' src={fire} alt={fire} />
           <img className='plane' src={plane} alt={plane} />
           <img src={ellipse} alt={ellipse} />
